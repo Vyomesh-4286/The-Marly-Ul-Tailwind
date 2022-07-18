@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .container-fluid {
+        @apply lg:px-100px md:px-16 px-5;
+    }
+
+    .bg-gradient-header {
+        background: linear-gradient(180deg, #206E87 0%, rgba(0, 0, 0, 0) 100%) !important;
+    }
+
+    .bg-gradient-sectionhero{
+        background: linear-gradient(180deg, #0A1D2F 0%, rgba(0, 0, 0, 0) 100%) !important;
+    }
+
+    .manuicon {
+        @apply py-2.5 px-4 gap-2 duration-1000 ease-in-out !important;
+    }
+
+    .icon {
+        @apply px-2.5 gap-0 duration-1000 ease-in-out !important;
+    }
+
+    .manuicon:hover {
+        @apply bg-whiteshade-0 border-whiteshade-0 duration-1000 ease-in-out !important;
+    }
+
+    .manuicon:hover .manuname {
+        @apply text-black duration-500 ease-in-out !important;
+    }
+
+    .manuicon:hover .bar {
+        @apply bg-black duration-1000 ease-in-out !important;
+    }
+
+    .manubar {
+        @apply flex justify-center duration-1000 ease-in-out
+    }
+
+    .bar_1,
+    .bar_2,
+    .bar_3 {
+        @apply duration-1000 ease-in-out !important;
+    }
+
+    .manuicon .bar {
+        @apply bg-white opacity-100 rounded-full h-px duration-1000 ease-in-out !important;
+    }
+
+    .animation2 {
+        @apply w-4 -rotate-45 -translate-y-[4.4px] delay-500 duration-1000 ease-in-out !important;
+    }
+
+    .animation1 {
+        @apply w-4 rotate-45 translate-y-[4.4px] delay-500 duration-1000 ease-in-out !important;
+    }
+
+    .manuname {
+        @apply hidden lg:flex duration-1000 ease-in-out !important;
+    }
+
+    .hide {
+        @apply opacity-0 w-0 !important;
+    }
+}
+
+@layer components {
+
+    .homepageswiper .swiper-pagination.swiper-pagination-fraction.swiper-pagination-horizontal,
+    .spaswiper .swiper-pagination.swiper-pagination-fraction.swiper-pagination-horizontal {
+        @apply absolute bottom-0 w-auto sm:pl-60px pl-5 left-0 mr-4 flex font-Gilroy font-light text-21px text-blackshade-0 z-20 !important;
+    }
+
+    .homepageswiper .swiper-button-prev:after,
+    .homepageswiper .swiper-button-next:after,
+    .spaswiper .swiper-button-prev:after,
+    .spaswiper .swiper-button-next:after {
+        @apply content-[''] z-20 !important;
+    }
+
+    .homepageswiper .swiper-button-prev,
+    .homepageswiper .swiper-button-next,
+    .spaswiper .swiper-button-prev,
+    .spaswiper .swiper-button-next {
+        @apply absolute bottom-0 z-20 top-auto w-9 h-9 !important;
+    }
+
+    .homepageswiper .swiper-button-next,
+    .spaswiper .swiper-button-next {
+        background-image: url('../public/assets/Homepage/svg/Arrow-Right.svg');
+        @apply sm:right-69px right-5 !important;
+    }
+
+    .homepageswiper .swiper-button-prev,
+    .spaswiper .swiper-button-prev {
+        background-image: url('../public/assets/Homepage/svg/Arrow-Left-1.svg');
+        @apply sm:right-120px right-72px left-auto !important;
+    }
+
+    /* homepageswiper */
+    .homepageswiper .swiper-pagination.swiper-pagination-fraction.swiper-pagination-horizontal {
+        @apply bg-whiteshade1-0 !important;
+    }
+
+    .homepageswiper .swiper-button-prev:after,
+    .homepageswiper .swiper-button-next:after {
+        @apply bg-whiteshade1-0 !important;
+    }
+
+    .homepageswiper .swiper-button-prev,
+    .homepageswiper .swiper-button-next {
+        @apply bg-whiteshade1-0 !important;
+    }
+
+    /* spaswiper */
+    .spaswiper2 .swiper-pagination.swiper-pagination-fraction.swiper-pagination-horizontal {
+        @apply bg-white !important;
+    }
+
+    .spaswiper2 .swiper-button-prev:after,
+    .spaswiper2 .swiper-button-next:after {
+        @apply bg-white !important;
+    }
+
+    .spaswiper2 .swiper-button-prev,
+    .spaswiper2 .swiper-button-next {
+        @apply bg-white !important;
+    }
+    
+    .spaswiper2 .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal{
+        @apply absolute bottom-0 right-1/5 left-auto w-auto !important;
+    }
+    .spaswiper2 .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal .swiper-pagination-bullet{
+        @apply bg-white border-0.5 border-blackshade2-0 !important;
+    }
+    .spaswiper2 .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal .swiper-pagination-bullet.swiper-pagination-bullet-active{
+        @apply bg-blackshade-0 translate-y-px !important;
+    }
+}
